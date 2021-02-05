@@ -157,7 +157,8 @@ class App {
                 'charset' => self::$config->db_charset,
                 'port' => self::$config->db_port,
                 'prefix' => self::$config->db_prefix,
-                'option' => self::$config->db_option
+                'option' => self::$config->db_option,
+                'collation' => self::$config->db_collation,
             ]);
             if (file_exists(self::$config->root_path . '/app/onload_db.php')) {
                 require_once self::$config->root_path . '/app/onload_db.php';

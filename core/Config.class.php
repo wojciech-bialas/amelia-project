@@ -22,4 +22,5 @@ class Config extends \ArrayObject{
 	public $db_charset;
 	public $db_prefix;
 	public $db_option;
+	public $db_collation;
 }

@@ -14,15 +14,31 @@ use core\Utils;
 class HelloCtrl {
     
     public function action_hello() {
-		        
-        $variable = 123;
         
-        App::getMessages()->addMessage(new Message("Hello world message", Message::INFO));
-        Utils::addInfoMessage("Or even easier message :-)");
+//        App::getMessages()->addMessage(new Message("Hello world message", Message::INFO));
+//        Utils::addInfoMessage("Or even easier message :-)");
         
-        App::getSmarty()->assign("value",$variable);        
+//        App::getSmarty()->assign("bio",$bio);
+        App::getSmarty()->assign("url",App::getConf()->app_url);
         App::getSmarty()->display("Hello.tpl");
         
     }
-    
+
+    public function action_files() {
+        $files = App::getDB()->select("files", "*");
+        App::getSmarty()->assign("list", $files);
+
+        App::getSmarty()->assign("url", App::getConf()->app_url);
+        App::getSmarty()->display("Files.tpl");
+    }
+
+    public function action_blog() {
+        App::getSmarty()->assign("url",App::getConf()->app_url);
+        App::getSmarty()->display("Blog.tpl");
+    }
+
+    public function action_contact() {
+        App::getSmarty()->assign("url",App::getConf()->app_url);
+        App::getSmarty()->display("Contact.tpl");
+    }
 }
