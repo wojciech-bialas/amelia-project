@@ -33,7 +33,10 @@ class HelloCtrl {
     }
 
     public function action_blog() {
-        App::getSmarty()->assign("url",App::getConf()->app_url);
+        App::getSmarty()->assign("url", App::getConf()->app_url);
+        $articles = App::getDB()->select("articles", "*");
+        $articles = array_reverse($articles, true);
+        App::getSmarty()->assign("articles", $articles);
         App::getSmarty()->display("Blog.tpl");
     }
 
