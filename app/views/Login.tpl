@@ -4,16 +4,16 @@
 
 {block name=body}
 
-    {if isset($message)}
-        <h3>{$message}</h3>
-    {/if}
+    {foreach core\App::getMessages()->getMessages() as $msg}
+        <h3>{$msg->text}</h3>
+    {/foreach}
 
 <section>
     <header>
         <h3>Log in form</h3>
     </header>
     <div class="content">
-        <form method="post" action="{$url}/login">
+        <form method="post" action="{url}check_login">
             <div class="fields">
                 <div class="field half">
                     <label for="login">login</label>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-02-04 22:00:28
+/* Smarty version 3.1.34-dev-7, created on 2021-02-23 22:57:49
   from 'C:\xampp74\htdocs\amelia\app\views\Files.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_601c606ca43a68_85241483',
+  'unifunc' => 'content_60357a5d69b7e7_57432992',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef8dd1fdbc19a5d8a1775ff3675a24138f1293ef' => 
     array (
       0 => 'C:\\xampp74\\htdocs\\amelia\\app\\views\\Files.tpl',
-      1 => 1612472427,
+      1 => 1614117469,
       2 => 'file',
     ),
   ),
@@ -20,23 +20,23 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_601c606ca43a68_85241483 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60357a5d69b7e7_57432992 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1010349168601c606ca3b8f5_43771306', 'body');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_37786820560357a5d692864_30912727', 'body');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "Hello.tpl");
 }
 /* {block 'body'} */
-class Block_1010349168601c606ca3b8f5_43771306 extends Smarty_Internal_Block
+class Block_37786820560357a5d692864_30912727 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_1010349168601c606ca3b8f5_43771306',
+    0 => 'Block_37786820560357a5d692864_30912727',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -56,8 +56,8 @@ $_smarty_tpl->tpl_vars['file']->do_else = false;
 ?>
                 <section>
                     <span class="icon style2 major fa-gem"></span>
-                    <a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/downloadable/<?php echo $_smarty_tpl->tpl_vars['file']->value["path"];?>
+                    <a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+downloadable/<?php echo $_smarty_tpl->tpl_vars['file']->value["path"];?>
 " download>
                         <h3><?php echo $_smarty_tpl->tpl_vars['file']->value["title"];?>
 </h3>

@@ -10,7 +10,7 @@
                 {foreach $list as $file}
                 <section>
                     <span class="icon style2 major fa-gem"></span>
-                    <a href="{$url}/downloadable/{$file["path"]}" download>
+                    <a href="{url}downloadable/{$file["path"]}" download>
                         <h3>{$file["title"]}</h3>
                     </a>
                     <p>{$file["description"]}</p>

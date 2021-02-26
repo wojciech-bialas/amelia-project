@@ -6,10 +6,18 @@
         <section class="wrapper style1 align-center">
             <div class="inner">
                 <h2>{$article["title"]}</h2>
-                <p>{$article["body"]}</p>
+                <h6>{$article["time"]}</h6>
+                <p>{$article["abbreviation"]}</p>
+                <ul class="actions">
+                    <li>
+                        <a href="{url}article/{$article["ID"]}"
+                           class="button icon solid fa-desktop">
+                            Czytaj dalej...
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     {/foreach}
-
 
 {/block}

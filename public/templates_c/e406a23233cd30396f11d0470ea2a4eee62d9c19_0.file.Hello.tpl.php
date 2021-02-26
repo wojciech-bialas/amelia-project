@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2021-01-31 18:47:58
+/* Smarty version 3.1.34-dev-7, created on 2021-02-25 23:19:07
   from 'C:\xampp74\htdocs\amelia\app\views\Hello.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_6016ed4e5054b6_92305947',
+  'unifunc' => 'content_6038225b2f8624_47523606',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e406a23233cd30396f11d0470ea2a4eee62d9c19' => 
     array (
       0 => 'C:\\xampp74\\htdocs\\amelia\\app\\views\\Hello.tpl',
-      1 => 1612115277,
+      1 => 1614291539,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6016ed4e5054b6_92305947 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6038225b2f8624_47523606 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -33,19 +33,19 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 <html lang="pl">
 <head>
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2593415466016ed4e500225_01107086', "title");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13433066516038225b2f2432_59230884', "title");
 ?>
 </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/css/noscript.css" /></noscript>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/css/navbar.css" />
 </head>
 <body class="is-preload">
 
@@ -53,63 +53,75 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2593415466016ed4e5
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbar-primary-collapse">
                 <div class="nav navbar-nav">
-                    <div><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/hello">Main</a></div>
-                    <div><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/files">Pliki</a></div>
-                    <div><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/blog">Blog</a></div>
-                    <div><a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/contact">Kontakt</a></div>
+                    <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+hello">Main</a></div>
+                    <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+files">Pliki</a></div>
+                    <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+blog">Blog</a></div>
+                    <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+contact">Kontakt</a></div>
+                    <?php if (core\RoleUtils::inRole("author")) {?>
+                        <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+panel">Panel</a></div>
+                        <div><a href="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+logout">Wyloguj</a></div>
+                    <?php }?>
                 </div>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4476008516016ed4e504346_30603976', 'body');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10748948256038225b2f74f3_69238535', 'body');
 ?>
 
 
+    <footer>
+        <div class="inner align-center">
+            <p>2021 &copy; wojciech.bialas@protonmail.com</p>
+        </div>
+    </footer>
+
 <!-- Scripts -->
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/jquery.min.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/jquery.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/jquery.scrollex.min.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/jquery.scrollex.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/jquery.scrolly.min.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/jquery.scrolly.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/browser.min.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/browser.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/breakpoints.min.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/breakpoints.min.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/util.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/util.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/assets/js/main.js"><?php echo '</script'; ?>
+ src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+assets/js/main.js"><?php echo '</script'; ?>
 >
 
 </body>
 </html><?php }
 /* {block "title"} */
-class Block_2593415466016ed4e500225_01107086 extends Smarty_Internal_Block
+class Block_13433066516038225b2f2432_59230884 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'title' => 
   array (
-    0 => 'Block_2593415466016ed4e500225_01107086',
+    0 => 'Block_13433066516038225b2f2432_59230884',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -119,12 +131,12 @@ Klaudia Rożyńska<?php
 }
 /* {/block "title"} */
 /* {block 'body'} */
-class Block_4476008516016ed4e504346_30603976 extends Smarty_Internal_Block
+class Block_10748948256038225b2f74f3_69238535 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'body' => 
   array (
-    0 => 'Block_4476008516016ed4e504346_30603976',
+    0 => 'Block_10748948256038225b2f74f3_69238535',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -145,8 +157,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             </ul>
         </div>
         <div class="image">
-            <img src="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
-/images/banner.jpg" alt="" />
+            <img src="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['url'][0], array( array(),$_smarty_tpl ) );?>
+images/klau-main.jpg" alt="Zdjęcie tytułowej logopedki" />
         </div>
     </section>
 </div>
