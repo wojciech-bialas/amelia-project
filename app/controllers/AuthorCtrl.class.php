@@ -25,7 +25,7 @@ class AuthorCtrl
         if ($_SERVER['REQUEST_METHOD'] === 'POST'
             && isset($_FILES['userfile']) && isset($_POST['title']) && isset($_POST['description'])) {
 
-            $uploadfile = 'C:\xampp74\htdocs\amelia\public\downloadable' . $_FILES['userfile']['name'];
+            $uploadfile = 'C:\xampp74\htdocs\amelia\public\downloadable\\' . $_FILES['userfile']['name'];
             if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile)) {
                 File::create($_POST['title'], $_POST['description'], $_FILES['userfile']['name']);
             }

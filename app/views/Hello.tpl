@@ -16,6 +16,7 @@
 
 {*  navbar  *}
     <link rel="stylesheet" type="text/css" href="{url}assets/css/navbar.css" />
+    {block name="stylesheet"}{/block}
 </head>
 <body class="is-preload">
 
